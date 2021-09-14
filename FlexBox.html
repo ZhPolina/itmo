@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FlexBox</title>
+    <style>
+      body{ 
+      	padding:1em; 
+        font-family:arial; 
+        font-size: 25px;
+      }
+       
+      .flex-container {
+        display: flex;
+        align-items: flex-start;
+        height: 100px; /* высота контейнера */
+        background: #20B2AA;
+        width: 350px;
+        
+      }
+       
+      .flex-item {
+        margin-left: 10px; /* расстояние между блоками */
+        padding: 10px; /* поля вокруг текста */
+        width: 200px; /* размер одного блока */
+        background: #008B8B;
+        color: #eee;
+        font-size: 25px;
+      }
+       
+      .flex-item:first-child {
+        margin-left: 0;
+      }
+       
+      /* свойство align-self */
+      .item1_self:hover {
+        align-self: center; /* элемент 1 выравнивается по центральной линии на поперечной оси.*/
+      }
+      .item2_self:hover {
+        align-self: flex-end; /* элемент 2 выравнивается по концу поперечной оси контейнера*/
+      }     
+      .item3_self:hover {
+        align-self: stretch; /* элемент 3 растягивается, занимая всё пространство по поперечной оси*/
+      }   
+       
+      /* свойство flex-shrink */
+      /* ширина flex-элементов шире, чем flex-контейнер, поэтому происходит сжатие элементов в соответствии с заданными коэффициентами*/
+       .item1_shrink{ 
+        flex-shrink: 3; /* коэффициент уменьшения элемента 1 равен 3, элемент 2 имеет размер 200px, элемент 1 - уменьшается в соттветствии с заданным коэффициентом, элемент 3 - занимает оставшееся свободное пространство в контейнере*/
+       }
+      .item2_shrink{ 
+        flex-shrink: 0; /* коэффициент уменьшения элемента 2 равен 0, поэтому элемент имеет установленный размер 200px */
+      }
+      
+      /* свойство flex-basis */
+      .item1_basis{ flex-basis: 50px; /* width бокса игнорируется, так как указан flex-basis, определяет начальную ширину флекс-элемента */
+      } 
+      .item2_basis{ flex-basis: auto; /* элемент 2 принимает размер из .flex-item, width = 200px, так как width задает ширину по умолчанию */ 
+      } 
+      .item3_basis{ flex-basis: 10px; /* элемент 3 принимает размер 10px, width бокса игнорируется*/ 
+      }
+      
+    </style>
+  </head>
+  <body>
+    <b>align-self:</b> 
+    <div class="flex-container">
+      <div class="flex-item item1_self">1 </div>
+      <div class="flex-item item2_self">2</div>
+      <div class="flex-item item3_self">3</div>
+    </div>
+    <br><br>
+     
+    <b>flex-shrink:</b> 
+      <div class="flex-container">
+      <div class="flex-item item1_shrink">1</div>
+      <div class="flex-item item2_shrink">2</div>
+      <div class="flex-item item3_shrink">3</div>
+    </div>
+    <br><br>
+
+    <b>flex-basis:</b> 
+      <div class="flex-container">
+      <div class="flex-item item1_basis">1</div>
+      <div class="flex-item item2_basis">2</div>
+      <div class="flex-item item3_basis">3</div>
+    </div>
+    <br><br>
+    
+  </body>
+</html>
