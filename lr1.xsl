@@ -3,7 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="http://www.w3.org/Math/XSL/mathml.xsl"?>
 <xsl:template match="/">
 <html><head><title></title></head>
-
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <body>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
