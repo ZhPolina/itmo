@@ -4,8 +4,10 @@
 <xsl:template match="/">
 <html>
 <head>
-    <script type="text/javascript" src="file:/P:/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<title>io</title>
+    <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+<title></title>
 </head>
 
 <body>
