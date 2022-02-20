@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet type="text/xsl" href="pmathml-self-style.xml"?>
 <html 
-  xmlns:m="http://www.w3.org/1998/Math/MathML"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xsl:version="1.0"
   xmlns:m="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
   xmlns="http://www.w3.org/1999/xhtml" >
