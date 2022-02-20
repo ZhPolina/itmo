@@ -5,6 +5,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xsl:version="1.0"
   xmlns="http://www.w3.org/1999/xhtml" >
 <head><title>Presentation MathML</title>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <object id="mmlFactory" classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
 </object>
 
