@@ -7,7 +7,8 @@
 <head><title>Presentation MathML</title>
 <object id="mmlFactory" classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
 </object>
-
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <xsl:processing-instruction name="import">namespace="m" implementation="#mmlFactory"</xsl:processing-instruction>
 
 </head>
