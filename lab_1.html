@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
 		<meta charset="utf-8">
 		<title>Введение в XSL</title>
 		<link rel="stylesheet" type="text/css" href="lab.css">
 	</head>
-	<body> 
-		<h2>Основы XSL</h2>
-			<button class="custom-btn btn-2" onclick="window.location.href = 'https://kodaktor.ru/g/xsl_intro';">Задание</button>
-			<h3>Выполнила:</h3>
-			<h4 id = "author">Полина Железникова</h4>
-				<div class="btn-group">
-					<form action="https://zhpolina.github.io/itmo/task_1/lr1" target="_blank">
-						<button class="custom-btn btn-2">Задание 1</button>
-					</form>
-					<form action="https://zhpolina.github.io/itmo/task_2/lr1_2" target="_blank">
-						<button class="custom-btn btn-2">Задание 2</button>
-					</form>
-				</div>
+	<body>
+		<h2 style="font-family: 'Lato', sans-serif">Основы XSL</h2>	
+		<table>
+			<thead>
+				<tr>
+				  <td>Выполнила:</td>
+				  <td>Полина Железникова</td>
+				</tr>
+		    </thead>
+			<tbody>
+				<tr>
+					<td>Текст задания:</td>
+					<td style="text-align: center"><button class="custom-btn btn-2" onclick="window.location.href = 'https://kodaktor.ru/g/xsl_intro';">Задание</button></td>
+				</tr>
+				<tr>
+					<td>Задание с MathJax:</td>
+					<td style="text-align: center">
+						<form action="https://zhpolina.github.io/itmo/task_1/lr1" target="_blank">
+							<button class="custom-btn btn-2">Задание 1 (MathJax)</button>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Задание с SVG:</td>
+					<td style="text-align: center">
+			  			<form action="https://zhpolina.github.io/itmo/task_2/lr1_2" target="_blank">
+							<button class="custom-btn btn-2">Задание 2 (SVG)</button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>
